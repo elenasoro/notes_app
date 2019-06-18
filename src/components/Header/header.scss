@@ -1,0 +1,29 @@
+header{
+
+  background-color: $light_grey;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10%;
+  padding-left: 5%;
+  height: 50px;
+}
+
+.menu__item{
+  display: inline-block;
+}
+.menu__item a{   
+  color: $white;
+  font-family: 'GothamRegular';
+  font-size: 16px;
+  list-style: none;
+  margin-left: 50px;
+  text-transform: uppercase;
+  transition: 1s ease;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover{
+      cursor: pointer;
+      color: $pink;
+  }
+}

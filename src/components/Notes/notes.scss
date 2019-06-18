@@ -1,0 +1,123 @@
+.notes_table{
+  margin-top: 30px;
+  li{
+    list-style-type: none;
+  }
+}
+
+.table_row{
+  display: flex;
+  .note_title{
+    width: 60%;
+    height: 50px;
+    padding-right: 20px;
+  }
+}
+
+.note_tag{
+  width: 80px;
+  div{
+    width: 70px;
+    text-align: center;
+    button {
+      background-color: $dark_grey;
+      color: $white;
+      border-radius: 20px;
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+&:hover{
+  button {
+    background-color: $pink;
+    color: $white;
+    cursor: pointer;
+  }
+}
+}
+
+.note_buttons{
+  button{
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    height: 20px;
+    width: 30px;
+  }
+  i{
+    font-size: 15px;
+  }
+}
+
+.add_note {
+  margin-left: 30px;
+  height: 30px;
+  width: 100px;
+  background-color: $pink;
+  color: $white;
+  font-size: 12px;
+  border-radius: 20px;
+  &:hover{
+    background-color: $dark_grey;
+    cursor: pointer;
+  }
+}
+
+.new_note_form{
+  margin-top: 40px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  input{
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 15px;
+  }
+  select{
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 15px;
+  }
+  button{
+    height: 30px;
+    width: 100px;
+    background-color: $pink;
+    color: $white;
+    font-size: 12px;
+    border-radius: 20px;
+    &:hover{
+      background-color: $dark_grey;
+      cursor: pointer;
+    }
+  }
+}
+
+.error_message{
+  color: $pink;
+  margin-bottom: 20px;
+}
+
+.reset_button{
+  background-color: transparent;
+  border: none;
+  color: $pink;
+  font-size: 12px;
+  margin-left: 20px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.highlight{
+  color: $pink;
+}
+
+.note_input_highlightable{
+  min-height: 30px;
+  border: 0.5px solid $dark_grey;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
